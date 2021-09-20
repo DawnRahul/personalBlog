@@ -1,0 +1,221 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  /* background-color: #e8e7ff42; */
+  font-family: 'Poppins', sans-serif;
+  background-image: url("/images/pink-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+p.content-vr-ctr {
+  font-size: 18px;
+}
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container.postBody {
+  background-color: #fbfbfb3d;
+}
+
+.content-vr-ctr {
+  text-align: center;
+}
+
+.del-icon {
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.del-container{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background-color: #ff5050a1;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.del-conform{
+  background-color: #ffa9afe3;
+  padding: 16px;
+  box-shadow: 0px 0px 12px 4px #e47077e3;
+  border-radius: 8px;
+}
+
+.del-statement{
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.del-y-n form{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.form-btn:hover {
+  text-decoration: none;
+}
+
+.form-btn-y{
+  background: #6be860;
+}
+.form-btn-y:hover{
+  background: #28a01b;
+}
+
+.form-btn-n{
+  background: #ff2121ed;
+}
+.form-btn-n:hover{
+  background: rgb(199, 9, 9);
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #64545bcc;
+}
+
+.navbar-brand:hover {
+  color: #353234cc;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-default {
+  background-color: #FF9292;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.content-vr-rt {
+  text-align: right;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+  background-color: #ff9292;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #373434;
+}
+
+.postBody {
+  padding-top: 24px;
+}
+
+.read-more {
+  color: crimson;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: rgb(255, 0, 51);
+}
+
+
+
+
+/* ********************************************************************** */
+/* ***********************************MEDIA QUERY************************ */
+/* ********************************************************************** */
+
+
+@media screen and (max-width: 768px) {
+  
+  .del-icon {
+    font-size: 24px;
+    margin-bottom: 0px;;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+  
+  p, .form-btn {
+    font-size: 14px;
+  }
+
+  .post-heading {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  .postBody p , .read-more{
+    font-size: 12px;
+  }
+
+  .post-title{
+    font-size: 18px;
+  }
+
+  .read-more {
+    color: rgb(255, 0, 51);
+  }
+
+}

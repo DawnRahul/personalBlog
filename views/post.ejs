@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+  <form action="#">
+    <p class="content-vr-rt del-icon" name="postId" value="<%= %>">🗑</p>
+  </form>
+  <h1 class="post-heading"><%=title%></h1>
+  <br/>
+  <p><%=content%></p>
+
+  <!-- Confirmation box for deleting a post -->
+  <div class="del-container">
+    
+    <div class="del-conform">
+       <div class="del-statement">
+      <p>
+        You are about to delete your post?
+      </p> 
+    </div>
+    <div class="del-y-n">
+      <form action="blog/post/delete">
+        <button type="submit" class="form-btn form-btn-y">Do it</button>
+        <button type="button" class="form-btn form-btn-n">Cancel</button>
+      </form>
+    </div>
+    </div>
+   
+  </div>
+
+<%- include("partials/footer"); -%>

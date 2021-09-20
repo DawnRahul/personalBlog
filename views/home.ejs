@@ -1,0 +1,23 @@
+
+<%- include("partials/header"); -%>
+    <h1 class="content-vr-ctr">Welcome, Dawn Rahul🧑</h1>
+    <p class="content-vr-ctr"> <%= startingContent %> </p>
+
+
+  <%  posts.forEach(function(post){ %>
+
+    <h1 class="post-title" ><%=post.postTitle%></h1>
+    <p style="display:inline">
+    <%=post.postBody.substring(0, 100) + " ..."%>
+
+      <form style="display:inline"  action="/posts/<%=post._id%>/readmore" method="post">
+        <a class="read-more" href="/posts/<%=post._id%>" name="readMore" value="<%=post._id%>" >Read more </a>
+      </form> 
+    
+    </p>
+
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
